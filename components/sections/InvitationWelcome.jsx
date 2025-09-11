@@ -20,7 +20,7 @@ export default function WelcomeMessage({ onContinue }) {
   return (
     <div 
     style={{
-      background: 'url(/images/aurora_1.jpeg)',
+      background: 'url(/images/fondoRosy1.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat', 

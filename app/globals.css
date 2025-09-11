@@ -128,9 +128,18 @@
 }
 
 /* Added custom fonts for wedding invitation */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&family=Tangerine:wght@400;700&display=swap');
+
 
 /* Added custom CSS classes for wedding styling */
+.font-main-title {
+  font-family: "Great Vibes", cursive;
+}
+
+.font-main-text {
+  font-family: "Tangerine", cursive;
+}
+
 .font-script {
   font-family: "Playfair Display", serif;
 }
