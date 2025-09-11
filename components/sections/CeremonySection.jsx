@@ -127,7 +127,7 @@ export default function CeremonySection() {
                   }}
                   className="space-y-4"
                 >
-                   <div className="text-4xl text-secondary font-script mb-4">
+                   <div className="text-4xl text-secondary font-main-text mb-4">
             Ceremonia y Recepción
           </div>
                   <h4 className={isVisible ? completeClass : basicClass}>

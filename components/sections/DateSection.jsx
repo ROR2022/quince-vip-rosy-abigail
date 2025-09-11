@@ -83,7 +83,7 @@ export default function DateSection() {
             {messages.dateMessage}
           </p>
 
-          <h2 className="font-script text-4xl text-secondary">FECHA ESPECIAL</h2>
+          <h2 className="font-main-text text-4xl text-secondary">FECHA ESPECIAL</h2>
 
           <div className="bg-primary/20 rounded-3xl p-12 max-w-md mx-auto">
             <div className="text-2xl font-medium text-foreground mb-2">

@@ -19,8 +19,8 @@ export function PremiumGallery() {
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
     const [isVisible, setIsVisible] = useState(false);
   
-    const basicClass = "text-3xl md:text-4xl font-bold mb-4";
-    const completeClass = "text-3xl md:text-4xl font-bold mb-4 scale-up-center";
+    const basicClass = "text-3xl md:text-4xl font-bold mb-4 font-main-text";
+    const completeClass = "text-3xl md:text-4xl font-bold mb-4 scale-up-center font-main-text";
   
     useEffect(() => {
       const handleScroll = () => {

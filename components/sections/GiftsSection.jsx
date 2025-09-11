@@ -15,8 +15,8 @@ export default function GiftsSection() {
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
   const [isVisible, setIsVisible] = useState(false);
 
-  const basicClass = "font-script text-4xl text-secondary";
-  const completeClass = "font-script text-4xl text-secondary scale-up-center";
+  const basicClass = "font-main-text text-4xl text-secondary";
+  const completeClass = "font-main-text text-4xl text-secondary scale-up-center";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,6 +82,26 @@ export default function GiftsSection() {
               {gifts.type}
             </h3>
             <p className="text-muted-foreground">{gifts.message}</p>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-8 mt-8">
+            <div className="bg-white/70 p-6 rounded-2xl w-64">
+              <h4 className="text-xl font-medium mb-2">Lluvia de Sobres</h4>
+              <p className="text-muted-foreground">
+                Tu presencia es el mejor regalo, pero si lo deseas,
+              </p>
+              <p className="text-muted-foreground">
+                puedes regalarme efectivo en un sobre.
+              </p>
+            </div>
+            <div className="bg-white/70 p-6 rounded-2xl w-64">
+              <h4 className="text-xl font-medium mb-2">Mesa de Regalos</h4>
+              <p className="text-muted-foreground">
+                Amazon
+              </p>
+              <p className="text-muted-foreground">
+                ID: 1234567890
+              </p>
+            </div>
           </div>
         </div>
       </div>

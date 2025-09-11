@@ -53,7 +53,7 @@ export default function HeroSection() {
     <section 
       //ref={sectionRef}
       style={{
-        backgroundImage: `url('/images/quince6.jpeg')`,
+        backgroundImage: `url('/images/quinceAmarillo2.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -86,7 +86,7 @@ export default function HeroSection() {
 
       
         <div className="space-y-2">
-          <div className="text-6xl text-secondary font-main-text">
+          <div className="text-6xl text-indigo-800 font-main-text">
             {couple.initials}
           </div>
           <h2 className="font-script text-4xl text-foreground">

@@ -81,7 +81,7 @@ export const weddingData = {
   // 👗 Código de vestimenta
   dressCode: {
     type: "Formal",
-    note: "Se reserva el color rosa para la quinceañera",
+    note: "Se reserva el color dorado y amarillo para la quinceañera",
     confirmationMessage: "¡Quiero compartir este momento tan esperado contigo! Por favor ayúdanos confirmando tu asistencia"
   },
 

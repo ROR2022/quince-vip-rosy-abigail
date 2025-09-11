@@ -59,7 +59,8 @@ export default function WelcomeMessage({ onContinue }) {
             <p 
             style={{ fontFamily: 'Dancing Script, cursive' }}
             className="text-lg leading-relaxed">
-              Hoy, al llegar a mis quince años, comienza un nuevo capítulo en mi vida, un sendero iluminado por la luz de mis sueños, adornado con la ternura del amor y la alegría que me acompañan. Con gratitud en el corazón, celebro este instante maravilloso que marca el inicio de una hermosa etapa.
+              ¡Te alabo porque soy una creación admirable! ¡Tus obras son maravillosas, y esto lo sé muy bien!. Salmo 139.14
+              Para esta hora he llegado y para este tiempo nací en tus propósitos eternos yo me he visto Padre.
             </p>
           </div>
 

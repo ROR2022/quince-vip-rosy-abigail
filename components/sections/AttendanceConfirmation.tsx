@@ -260,7 +260,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
             </div>
 
             <h3
-              className="text-4xl font-bold mb-4 leading-tight text-purple-600"
+              className="text-4xl font-main-text font-bold mb-4 leading-tight text-purple-600"
               style={{
                 background:
                   "linear-gradient(135deg, var(--color-aurora-lavanda), var(--color-aurora-rosa))",

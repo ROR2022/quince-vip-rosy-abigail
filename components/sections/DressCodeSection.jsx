@@ -22,8 +22,8 @@ export default function DressCodeSection() {
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
   const [isVisible, setIsVisible] = useState(false);
 
-  const basicClass = "font-script text-4xl text-secondary";
-  const completeClass = "font-script text-4xl text-secondary scale-up-center";
+  const basicClass = "font-main-text text-4xl text-secondary";
+  const completeClass = "font-main-text text-4xl text-secondary scale-up-center";
 
   useEffect(() => {
     const handleScroll = () => {

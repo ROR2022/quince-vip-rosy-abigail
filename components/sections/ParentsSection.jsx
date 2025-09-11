@@ -10,8 +10,8 @@ export default function ParentsSection() {
     const [isVisible, setIsVisible] = useState(false);
     
   
-    const basicClass="font-script text-3xl text-secondary mb-4";
-    const completeClass="font-script text-3xl text-secondary mb-4 scale-up-center";
+    const basicClass="font-main-text text-3xl text-indigo-800 mb-4";
+    const completeClass="font-main-text text-3xl text-indigo-800 mb-4 scale-up-center";
   
     useEffect(() => {
       const handleScroll = () => {
@@ -35,7 +35,7 @@ export default function ParentsSection() {
   return (
     <section 
     style={{
-      backgroundImage: `url('/images/quinceB&B1.jpeg')`,
+      backgroundImage: `url('/images/fondoRosy2.jpg')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -52,8 +52,11 @@ export default function ParentsSection() {
               }}
               className="relative p-6 rounded-2xl z-10 text-center space-y-8 py-12"
             >
-              <p className="text-lg text-muted-foreground italic max-w-2xl mx-auto leading-relaxed">
-                {parents.message}
+              <p className="text-lg text-white italic max-w-2xl mx-auto leading-relaxed">
+                Hoy, mi corazón rebosa de gratitud. Doy gracias a Dios por cada paso de mi vida y a mis padres  
+                por cuidarme y guiarme en este camino.
+                Hace quince años mis padres agradecieron a Dios por mi vida. 
+                Hoy, yo agradezco a Dios por ellos, por su infinito amor y paciencia.
               </p>
 
               <div className="space-y-8">
@@ -61,7 +64,7 @@ export default function ParentsSection() {
                   <h3 className={isVisible ? completeClass : basicClass}>
                     Mis papás
                   </h3>
-                  <div className="space-y-2">
+                  <div className="space-y-2 text-white">
                     <p className="text-xl font-medium">
                       {parents.bride.mother}
                     </p>
