@@ -10,8 +10,8 @@ export default function ParentsSection() {
     const [isVisible, setIsVisible] = useState(false);
     
   
-    const basicClass="font-main-text text-3xl text-indigo-800 mb-4";
-    const completeClass="font-main-text text-3xl text-indigo-800 mb-4 scale-up-center";
+    const basicClass="font-main-text text-5xl text-indigo-800 mb-4";
+    const completeClass="font-main-text text-5xl text-indigo-800 mb-4 scale-up-center";
   
     useEffect(() => {
       const handleScroll = () => {

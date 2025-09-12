@@ -15,8 +15,8 @@ export default function GiftsSection() {
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
   const [isVisible, setIsVisible] = useState(false);
 
-  const basicClass = "font-main-text text-4xl text-secondary";
-  const completeClass = "font-main-text text-4xl text-secondary scale-up-center";
+  const basicClass = "font-main-text text-5xl text-white";
+  const completeClass = "font-main-text text-5xl text-white scale-up-center";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +48,7 @@ export default function GiftsSection() {
     <section
       ref={sectionRef}
       style={{
-        backgroundImage: `url('/images/quinceB&B4.jpeg')`,
+        backgroundImage: `url('/images/fondoRosy2.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -72,7 +72,9 @@ export default function GiftsSection() {
         className="container bg-slate-300 bg-opacity-60 mx-auto px-4  p-6 rounded-2xl"
       >
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className={isVisible ? completeClass : basicClass}>Regalo</h2>
+          <h2 
+          style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
+          className={isVisible ? completeClass : basicClass}>Regalo</h2>
 
           <div className="bg-muted/50 rounded-2xl p-8 max-w-md mx-auto">
             <Gift className="w-16 h-16 text-secondary mx-auto mb-4" />

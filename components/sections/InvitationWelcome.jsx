@@ -57,8 +57,8 @@ export default function WelcomeMessage({ onContinue }) {
             
 
             <p 
-            style={{ fontFamily: 'Dancing Script, cursive' }}
-            className="text-lg leading-relaxed">
+            //style={{ fontFamily: 'cursive' }}
+            className="text-lg font-bold leading-relaxed text-indigo-800 italic">
               ¡Te alabo porque soy una creación admirable! ¡Tus obras son maravillosas, y esto lo sé muy bien!. Salmo 139.14
               Para esta hora he llegado y para este tiempo nací en tus propósitos eternos yo me he visto Padre.
             </p>

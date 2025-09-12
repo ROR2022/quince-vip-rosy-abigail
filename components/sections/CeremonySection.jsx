@@ -53,7 +53,7 @@ export default function CeremonySection() {
     <section
       ref={sectionRef}
       style={{
-         backgroundImage: `url('/images/quinceB&B8.jpeg')`,
+         backgroundImage: `url('/images/fondoRosy2.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",  
@@ -127,7 +127,7 @@ export default function CeremonySection() {
                   }}
                   className="space-y-4"
                 >
-                   <div className="text-4xl text-secondary font-main-text mb-4">
+                   <div className="text-5xl text-indigo-800 font-main-text mb-4">
             Ceremonia y Recepción
           </div>
                   <h4 className={isVisible ? completeClass : basicClass}>

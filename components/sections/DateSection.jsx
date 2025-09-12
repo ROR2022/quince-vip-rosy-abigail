@@ -15,8 +15,8 @@ export default function DateSection() {
       const [isVisible, setIsVisible] = useState(false);
       
     
-      const basicClass="text-8xl font-bold text-primary mb-2";
-      const completeClass="text-8xl font-bold text-primary mb-2 scale-up-center";
+      const basicClass="text-8xl font-bold text-indigo-800 mb-2";
+      const completeClass="text-8xl font-bold text-indigo-800 mb-2 scale-up-center";
     
       useEffect(() => {
         const handleScroll = () => {
@@ -51,7 +51,7 @@ export default function DateSection() {
       ref={sectionRef}
       style={{
         
-         backgroundImage: `url('/images/quinceB&B2.jpeg')`,
+         backgroundImage: `url('/images/fondoRosy2.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat', 
@@ -74,7 +74,7 @@ export default function DateSection() {
         style={{
           // Remover animación CSS duplicada, usar solo scroll animation
           willChange: 'transform, opacity', // Optimización para móviles
-          backgroundColor: "#C8BFE780",
+          backgroundColor: "#C8BFE795",
         }}
         className="container bg-slate-300 bg-opacity-60 rounded-b-2xl mx-auto px-4  p-6 rounded-2xl"
       >
@@ -83,7 +83,11 @@ export default function DateSection() {
             {messages.dateMessage}
           </p>
 
-          <h2 className="font-main-text text-4xl text-secondary">FECHA ESPECIAL</h2>
+          <h2 
+          style={{
+            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+          }}
+          className="font-main-text text-4xl text-white font-bold">FECHA ESPECIAL</h2>
 
           <div className="bg-primary/20 rounded-3xl p-12 max-w-md mx-auto">
             <div className="text-2xl font-medium text-foreground mb-2">

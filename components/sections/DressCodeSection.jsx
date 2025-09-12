@@ -22,8 +22,8 @@ export default function DressCodeSection() {
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
   const [isVisible, setIsVisible] = useState(false);
 
-  const basicClass = "font-main-text text-4xl text-secondary";
-  const completeClass = "font-main-text text-4xl text-secondary scale-up-center";
+  const basicClass = "font-main-text text-5xl text-indigo-800";
+  const completeClass = "font-main-text text-5xl text-indigo-800 scale-up-center";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,16 +50,6 @@ export default function DressCodeSection() {
     animationConfig.type,
     animationConfig.delay
   );
-
-  /**
-   * Información del evento
-    dayName: "SABADO",
-    day: "27",
-    month: "SEPTIEMBRE",
-    year: "2025",
-    title: "Mis XV Años"
-   */
-
     const eventInfo = {
       dayName: "SABADO",
       day: "27",
@@ -107,7 +97,7 @@ export default function DressCodeSection() {
       id="dresscode"
       className="py-20"
       style={{
-         backgroundImage: `url('/images/quinceB&B5.jpeg')`,
+         backgroundImage: `url('/images/fondoRosy3.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',  
@@ -167,7 +157,7 @@ export default function DressCodeSection() {
           <h3 className="text-3xl font-bold text-foreground">
             {dressCode.type}
           </h3>
-          <p className="text-lg text-muted-foreground">{dressCode.note}</p>
+          <p className="text-lg text-white">{dressCode.note}</p>
 
           <Card 
           style={{ display: 'none' }}

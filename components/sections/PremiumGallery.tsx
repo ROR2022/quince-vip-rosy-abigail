@@ -19,8 +19,8 @@ export function PremiumGallery() {
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
     const [isVisible, setIsVisible] = useState(false);
   
-    const basicClass = "text-3xl md:text-4xl font-bold mb-4 font-main-text";
-    const completeClass = "text-3xl md:text-4xl font-bold mb-4 scale-up-center font-main-text";
+    const basicClass = "text-5xl font-bold mb-4 font-main-text";
+    const completeClass = "text-5xl font-bold mb-4 scale-up-center font-main-text";
   
     useEffect(() => {
       const handleScroll = () => {
@@ -95,7 +95,7 @@ export function PremiumGallery() {
   return (
     <section 
     style={{
-      background: 'url(/images/quinceB&B8.jpeg)',
+      background: 'url(/images/fondoRosy2.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -114,10 +114,13 @@ export function PremiumGallery() {
             📸 Galería
           </div>
 
-          <h2 className={isVisible ? completeClass : basicClass} style={{ color: '#b87878' }}>
+          <h2 
+          className={isVisible ? completeClass : basicClass} 
+          style={{ color: '#fff', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
+          >
             {premiumDemoData.gallery.title}
           </h2>
-          <p className="text-xl mb-2" style={{ color: '#c98888' }}>
+          <p className="text-xl mb-2 text-indigo-800 italic">
             {premiumDemoData.gallery.subtitle}
           </p>
           <p className="text-gray-600 max-w-2xl mx-auto">

@@ -49,7 +49,7 @@ export default function TimelineSection() {
     <section
       ref={sectionRef}
       style={{
-          backgroundImage: `url('/images/quinceB&B9.jpeg')`,
+          backgroundImage: `url('/images/fondoRosy2.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',  
