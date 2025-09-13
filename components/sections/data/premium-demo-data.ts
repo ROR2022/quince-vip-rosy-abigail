@@ -84,29 +84,149 @@ export const premiumDemoData = {
     description: "Una colección de mis fotos favoritas preparándome para este gran día",
     images: [
       { 
-        src: "/images/quince1.jpeg", 
+        src: "/images/rosy01.jpg", 
         alt: "Sesión fotográfica 1", 
         caption: "Momentos Inolvidables",
         category: "preparacion"
       },
       { 
-        src: "/images/quince2.jpeg", 
+        src: "/images/rosy02.jpg", 
         alt: "Sesión fotográfica 2", 
         caption: "Momentos Inolvidables",
         category: "vestido"
       },
       { 
-        src: "/images/quince3.jpeg", 
+        src: "/images/rosy03.jpg", 
         alt: "Sesión fotográfica 3", 
         caption: "Momentos Inolvidables",
         category: "alegria"
       },
       { 
-        src: "/images/quince4.jpeg", 
+        src: "/images/rosy04.jpg", 
         alt: "Sesión fotográfica 4", 
         caption: "Momentos Inolvidables",
         category: "celebracion"
       },
+      {
+        src: "/images/rosy05.jpg", 
+        alt: "Sesión fotográfica 5", 
+        caption: "Momentos Inolvidables",
+        category: "amistad"
+      },
+      {
+        src: "/images/rosy06.jpg", 
+        alt: "Sesión fotográfica 6", 
+        caption: "Momentos Inolvidables",
+        category: "familia"
+      },
+      {
+        src: "/images/rosy07.jpg", 
+        alt: "Sesión fotográfica 7", 
+        caption: "Momentos Inolvidables",
+        category: "diversion"
+      },
+      {
+        src: "/images/rosy09.jpg", 
+        alt: "Sesión fotográfica 9", 
+        caption: "Momentos Inolvidables",
+        category: "sonrisa"
+      },
+      {
+        src: "/images/rosy10.jpg", 
+        alt: "Sesión fotográfica 10", 
+        caption: "Momentos Inolvidables",
+        category: "felicidad"
+      },
+      {
+        src: "/images/rosy11.jpg", 
+        alt: "Sesión fotográfica 11", 
+        caption: "Momentos Inolvidables",
+        category: "magia"
+      },
+      {
+        src: "/images/rosy12.jpg", 
+        alt: "Sesión fotográfica 12", 
+        caption: "Momentos Inolvidables",
+        category: "sueños"
+      },
+      {
+        src: "/images/rosy13.jpg", 
+        alt: "Sesión fotográfica 13", 
+        caption: "Momentos Inolvidables",
+        category: "esperanza"
+      },
+      {
+        src: "/images/rosy14.jpg", 
+        alt: "Sesión fotográfica 14", 
+        caption: "Momentos Inolvidables",
+        category: "ilusion"
+      },
+      {
+        src: "/images/rosy15.jpg", 
+        alt: "Sesión fotográfica 15", 
+        caption: "Momentos Inolvidables",
+        category: "amor"
+      },
+      {
+        src: "/images/rosy16.jpg", 
+        alt: "Sesión fotográfica 16", 
+        caption: "Momentos Inolvidables",
+        category: "amistad"
+      },
+      {
+        src: "/images/rosy17.jpg", 
+        alt: "Sesión fotográfica 17", 
+        caption: "Momentos Inolvidables",
+        category: "familia"
+      },
+      {
+        src: "/images/rosy18.jpg", 
+        alt: "Sesión fotográfica 18", 
+        caption: "Momentos Inolvidables",
+        category: "celebracion"
+      },
+      {
+        src: "/images/rosy19.jpg", 
+        alt: "Sesión fotográfica 19", 
+        caption: "Momentos Inolvidables",
+        category: "diversion"
+      },
+      {
+        src: "/images/rosy20.jpg", 
+        alt: "Sesión fotográfica 20", 
+        caption: "Momentos Inolvidables",
+        category: "elegancia"
+      },
+      {
+        src: "/images/rosy21.jpg", 
+        alt: "Sesión fotográfica 21", 
+        caption: "Momentos Inolvidables",
+        category: "sonrisa"
+      },
+      {
+        src: "/images/rosy22.jpg", 
+        alt: "Sesión fotográfica 22", 
+        caption: "Momentos Inolvidables",
+        category: "felicidad"
+      },
+      {
+        src: "/images/rosy23.jpg", 
+        alt: "Sesión fotográfica 23", 
+        caption: "Momentos Inolvidables",
+        category: "magia"
+      },
+      {
+        src: "/images/rosy24.jpg", 
+        alt: "Sesión fotográfica 24", 
+        caption: "Momentos Inolvidables",
+        category: "sueños"
+      },
+      {
+        src: "/images/rosy25.jpg", 
+        alt: "Sesión fotográfica 25", 
+        caption: "Momentos Inolvidables",
+        category: "esperanza"
+      }
     ]
   },
   
