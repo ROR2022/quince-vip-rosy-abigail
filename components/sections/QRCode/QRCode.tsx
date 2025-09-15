@@ -76,12 +76,12 @@ const QRCode = () => {
               fontFamily: 'serif'
             }}
           >
-            FRIDA
+            ROSY ABIGAIL
           </h1>
 
           <div className='mb-6'>
             <Image
-              src="/images/frida6.jpg"
+              src="/images/quinceB&B4.jpeg"
               alt="Frida"
               width={200}
               height={150}
