@@ -95,7 +95,9 @@ export default function GiftsSection() {
                 puedes regalarme efectivo en un sobre.
               </p>
             </div>
-            <div className="bg-white/70 p-6 rounded-2xl w-64">
+            <div 
+            style={{display:'none'}}
+            className="bg-white/70 p-6 rounded-2xl w-64">
               <h4 className="text-xl font-medium mb-2">Mesa de Regalos</h4>
               <p className="text-muted-foreground">
                 Amazon

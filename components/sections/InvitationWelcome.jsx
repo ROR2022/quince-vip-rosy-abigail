@@ -20,7 +20,7 @@ export default function WelcomeMessage({ onContinue }) {
   return (
     <div 
     style={{
-      background: 'url(/images/fondoRosy1.jpg)',
+      background: 'url(/images/fondoB&B3.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat', 
@@ -30,19 +30,19 @@ export default function WelcomeMessage({ onContinue }) {
 
       {/* Main content card */}
       <div
-        className={`relative bg-slate-300 opacity-60 rounded-2xl p-6 z-10 max-w-2xl mx-auto transition-all duration-1000 ${
+        className={`relative rounded-2xl p-6 z-10 max-w-3xl mx-auto transition-all duration-1000 ${
           isVisible ? "" : ""
         }`}
       >
         <div className=" p-12 text-center text-black">
           {/* Heart icon */}
           <div className="mb-8">
-            <Heart className="w-16 h-16 mx-auto text-black" />
+            <Heart className="w-16 h-16 mx-auto text-white" />
           </div>
 
           {/* Decorative line */}
           <div className="mb-8">
-            <svg className="w-32 h-4 mx-auto text-secondary" viewBox="0 0 128 16" fill="none">
+            <svg className="w-32 h-4 mx-auto text-white" viewBox="0 0 128 16" fill="none">
               <path
                 d="M2 8C20 2 40 14 64 8C88 2 108 14 126 8"
                 stroke="currentColor"
@@ -57,8 +57,10 @@ export default function WelcomeMessage({ onContinue }) {
             
 
             <p 
-            //style={{ fontFamily: 'cursive' }}
-            className="text-lg font-bold leading-relaxed text-indigo-800 italic">
+            style={{ 
+              textShadow: '4px 4px 8px rgba(0, 0, 0, 0.5)',
+            }}
+            className="text-xl font-bold leading-relaxed text-red-600 italic">
               ¡Te alabo porque soy una creación admirable! ¡Tus obras son maravillosas, y esto lo sé muy bien!. Salmo 139.14
               Para esta hora he llegado y para este tiempo nací en tus propósitos eternos yo me he visto Padre.
             </p>
