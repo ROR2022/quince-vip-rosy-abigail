@@ -207,7 +207,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
   return (
     <section
       style={{
-        background: "url('/images/fondoRosy2.jpg')",
+        background: "url('/images/fondoRosySimple.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -234,12 +234,12 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto relative">
+      <div className="max-w-2xl mx-auto relative text-white">
         <div
           className="rounded-3xl p-10 shadow-2xl backdrop-blur-sm border-2 relative overflow-hidden"
           style={{
-            background:
-              "linear-gradient(135deg, rgba(255, 179, 217, 0.08) 0%, rgba(248, 246, 240, 0.95) 25%, rgba(230, 217, 255, 0.08) 50%, rgba(255, 242, 204, 0.12) 75%, rgba(253, 252, 252, 0.95) 100%)",
+            //background:
+              //"linear-gradient(135deg, rgba(255, 179, 217, 0.08) 0%, rgba(248, 246, 240, 0.95) 25%, rgba(230, 217, 255, 0.08) 50%, rgba(255, 242, 204, 0.12) 75%, rgba(253, 252, 252, 0.95) 100%)",
             borderImage:
               "linear-gradient(45deg, var(--color-aurora-oro), var(--color-aurora-rosa), var(--color-aurora-lavanda)) 1",
           }}
@@ -260,7 +260,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
             </div>
 
             <h3
-              className="text-4xl font-main-text font-bold mb-4 leading-tight text-purple-600"
+              className="text-4xl font-main-text font-bold mb-4 leading-tight text-amber-500"
               style={{
                 background:
                   "linear-gradient(135deg, var(--color-aurora-lavanda), var(--color-aurora-rosa))",
@@ -269,7 +269,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
                 backgroundClip: "text",
               }}
             >
-              💌 Confirma tu Asistencia
+              Confirma tu Asistencia
             </h3>
 
             <p
@@ -307,7 +307,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
             {/* Campo Nombre */}
             <div className="relative group">
               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <User className="h-5 w-5 text-aurora-lavanda opacity-70" />
+                <User className="h-5 w-5 text-black opacity-70" />
               </div>
               <input
                 type="text"
@@ -317,9 +317,9 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
                 placeholder="Tu nombre completo"
                 required
                 disabled={isSubmitting}
-                className="w-full text-black pl-12 pr-4 py-4 rounded-2xl border-2 transition-all duration-300 focus:outline-none focus:ring-0 text-lg placeholder-opacity-60 disabled:opacity-50"
+                className="w-full text-black pl-12 pr-4 py-4 rounded-2xl border-2 transition-all duration-300 focus:outline-none focus:ring-0 text-lg disabled:opacity-50"
                 style={{
-                  background: "rgba(253, 252, 252, 0.8)",
+                  //background: "rgba(253, 252, 252, 0.8)",
                   borderColor: "rgba(255, 242, 204, 0.4)",
                   //color: "var(--color-aurora-lavanda)",
                 }}
@@ -338,7 +338,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
             {/* Campo Teléfono */}
             <div className="relative group">
               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <Phone className="h-5 w-5 text-aurora-lavanda opacity-70" />
+                <Phone className="h-5 w-5 text-black opacity-70" />
               </div>
               <input
                 type="tel"
@@ -349,7 +349,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
                 disabled={isSubmitting}
                 className="w-full text-black pl-12 pr-4 py-4 rounded-2xl border-2 transition-all duration-300 focus:outline-none focus:ring-0 text-lg placeholder-opacity-60 disabled:opacity-50"
                 style={{
-                  background: "rgba(253, 252, 252, 0.8)",
+                  //background: "rgba(253, 252, 252, 0.8)",
                   borderColor: "rgba(255, 242, 204, 0.4)",
                   //color: "var(--color-aurora-lavanda)",
                 }}
@@ -368,7 +368,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
             {/* Campo Confirmación de Asistencia */}
             <div className="relative group">
               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <CheckCircle className="h-5 w-5 text-aurora-lavanda opacity-70" />
+                <CheckCircle className="h-5 w-5 text-black opacity-70" />
               </div>
               <select
                 name="confirmacion"
@@ -377,7 +377,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
                 disabled={isSubmitting}
                 className="w-full text-black pl-12 pr-4 py-4 rounded-2xl border-2 transition-all duration-300 focus:outline-none focus:ring-0 text-lg disabled:opacity-50 appearance-none cursor-pointer"
                 style={{
-                  background: "rgba(253, 252, 252, 0.8)",
+                  //background: "rgba(253, 252, 252, 0.8)",
                   borderColor: "rgba(255, 242, 204, 0.4)",
                 }}
                 onFocus={(e) => {
@@ -398,7 +398,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
             {/* Campo Número de Invitados */}
             <div className="relative group">
               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <Users className="h-5 w-5 text-aurora-lavanda opacity-70" />
+                <Users className="h-5 w-5 text-black opacity-70" />
               </div>
               <select
                 name="numeroInvitados"
@@ -407,7 +407,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
                 disabled={isSubmitting}
                 className="w-full text-black pl-12 pr-4 py-4 rounded-2xl border-2 transition-all duration-300 focus:outline-none focus:ring-0 text-lg disabled:opacity-50 appearance-none cursor-pointer"
                 style={{
-                  background: "rgba(253, 252, 252, 0.8)",
+                  //background: "rgba(253, 252, 252, 0.8)",
                   borderColor: "rgba(255, 242, 204, 0.4)",
                 }}
                 onFocus={(e) => {
@@ -432,7 +432,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
             {/* Campo Mensaje */}
             <div className="relative group">
               <div className="absolute top-4 left-0 pl-4 flex items-start pointer-events-none">
-                <MessageCircle className="h-5 w-5 text-aurora-lavanda opacity-70" />
+                <MessageCircle className="h-5 w-5 text-black opacity-70" />
               </div>
               <textarea
                 name="mensaje"
@@ -443,7 +443,7 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
                 disabled={isSubmitting}
                 className="w-full text-black pl-12 pr-4 py-4 rounded-2xl border-2 transition-all duration-300 focus:outline-none focus:ring-0 text-lg placeholder-opacity-60 resize-none disabled:opacity-50"
                 style={{
-                  background: "rgba(253, 252, 252, 0.8)",
+                  //background: "rgba(253, 252, 252, 0.8)",
                   borderColor: "rgba(255, 242, 204, 0.4)",
                   //color: "var(--color-aurora-lavanda)",
                 }}
@@ -467,9 +467,9 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
                 disabled={isSubmitting || showSuccess}
                 className="relative overflow-hidden text-white rounded-full py-8 px-8 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-500 text-lg font-semibold group min-w-[200px] disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
                 style={{
-                  background: showSuccess
-                    ? "linear-gradient(135deg, #4ade80, #22c55e, #16a34a)"
-                    : "linear-gradient(135deg, #aaa 0%, #bbb 50%, #ccc 100%)",
+                  //background: showSuccess
+                  //</div>  ? "linear-gradient(135deg, #4ade80, #22c55e, #16a34a)"
+                  //  : "linear-gradient(135deg, #aaa 0%, #bbb 50%, #ccc 100%)",
                   border: "2px solid rgba(255, 242, 204, 0.5)",
                 }}
               >
@@ -488,19 +488,19 @@ ${formData.mensaje ? `💌 *Mensaje especial:*\n${formData.mensaje}` : ""}
                       <span>¡Enviado a WhatsApp!</span>
                     </>
                   ) : (
-                    <>
-                      <Phone className="w-5 h-5 mr-3 group-hover:animate-bounce" />
-                      <h6 className="text-purple-700 flex flex-col md:flex-row gap-2 items-center justify-center">
-                        <span>✨ Confirmar</span>
+                    <div className="bg-transparent flex items-center">
+                      <Phone className="w-5 h-5 mr-3 group-hover:animate-bounce text-white" />
+                      <h6 className="text-amber-500 flex flex-col md:flex-row gap-2 items-center justify-center">
+                        <span> Confirmar</span>
                         <span>Asistencia</span>
                       </h6>
-                    </>
+                    </div>
                   )}
                 </div>
               </Button>
 
               {/* Texto informativo debajo del botón */}
-              <p className="mt-4 text-sm opacity-75 text-pink-500 bg-emerald-200 bg-opacity-50 p-4 rounded-xl">
+              <p className="mt-4 text-sm text-pink-500 p-4 rounded-xl">
                 {showSuccess
                   ? "¡Gracias por confirmar! Te esperamos en esta celebración especial 🎉"
                   : "Al confirmar, recibirás todos los detalles por WhatsApp 💌"}

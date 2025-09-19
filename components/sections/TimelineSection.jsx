@@ -49,7 +49,7 @@ export default function TimelineSection() {
     <section
       ref={sectionRef}
       style={{
-          backgroundImage: `url('/images/fondoRosy2.jpg')`,
+          backgroundImage: `url('/images/fondoRosySimple.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',  
@@ -67,7 +67,7 @@ export default function TimelineSection() {
       style={{
         animation: 'bounce1 2s ease 0s 1 normal forwards'
       }}
-      className="container bg-slate-300 bg-opacity-60 mx-auto px-4 bg-transparent p-6 rounded-2xl">
+      className="container mx-auto px-4 bg-transparent p-6 rounded-2xl">
 
         <div 
         style={{display:'none'}}
@@ -83,7 +83,7 @@ export default function TimelineSection() {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center bg-transparent">
             <div className="relative w-full h-96 rounded-2xl  overflow-hidden">
-              {/* Contenedor con forma de corazón - Versión más grande */}
+              
               <div 
                 className="w-full h-full relative"
                 
@@ -102,7 +102,7 @@ export default function TimelineSection() {
               </div>
             </div>
 
-            <div className="space-y-6 bg-slate-400 bg-opacity-80 p-6 rounded-2xl">
+            <div className="space-y-6 p-6 rounded-2xl text-white">
               {timeline.map((item, index) => (
                 <div 
                   key={item.id} 
@@ -144,10 +144,10 @@ export default function TimelineSection() {
 
               <div 
               style={{
-                backgroundColor: "#C8BFE780",
+                //backgroundColor: "#C8BFE780",
               }}
-              className=" text-center mt-8 p-6 bg-slate-300 bg-opacity-60 rounded-lg">
-                <p className="text-lg italic text-muted-foreground">
+              className=" text-center mt-8 p-6 rounded-lg">
+                <p className="text-lg italic text-amber-500">
                   &ldquo;{messages.timelineQuote}&rdquo;
                 </p>
               </div>

@@ -15,8 +15,8 @@ export default function DateSection() {
       const [isVisible, setIsVisible] = useState(false);
       
     
-      const basicClass="text-8xl font-bold text-indigo-800 mb-2";
-      const completeClass="text-8xl font-bold text-indigo-800 mb-2 scale-up-center";
+      const basicClass="text-8xl font-bold text-amber-500 mb-2";
+      const completeClass="text-8xl font-bold text-amber-500 mb-2 scale-up-center";
     
       useEffect(() => {
         const handleScroll = () => {
@@ -50,8 +50,7 @@ export default function DateSection() {
     <section 
       ref={sectionRef}
       style={{
-        
-         backgroundImage: `url('/images/fondoRosy2.jpg')`,
+         backgroundImage: `url('/images/fondoRosySimple.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat', 
@@ -74,9 +73,9 @@ export default function DateSection() {
         style={{
           // Remover animación CSS duplicada, usar solo scroll animation
           willChange: 'transform, opacity', // Optimización para móviles
-          backgroundColor: "#C8BFE795",
+          //backgroundColor: "#C8BFE795",
         }}
-        className="container bg-slate-300 bg-opacity-60 rounded-b-2xl mx-auto px-4  p-6 rounded-2xl"
+        className="container text-white rounded-b-2xl mx-auto px-4  p-6 rounded-2xl"
       >
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <p className="text-lg text-muted-foreground italic">

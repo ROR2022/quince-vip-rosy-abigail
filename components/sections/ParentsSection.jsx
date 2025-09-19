@@ -10,8 +10,8 @@ export default function ParentsSection() {
     const [isVisible, setIsVisible] = useState(false);
     
   
-    const basicClass="font-main-text text-5xl text-indigo-800 mb-4";
-    const completeClass="font-main-text text-5xl text-indigo-800 mb-4 scale-up-center";
+    const basicClass="text-6xl text-amber-500 font-main-text";
+    const completeClass="text-6xl text-amber-500 font-main-text scale-up-center";
   
     useEffect(() => {
       const handleScroll = () => {
@@ -35,7 +35,7 @@ export default function ParentsSection() {
   return (
     <section 
     style={{
-      backgroundImage: `url('/images/fondoRosy2.jpg')`,
+      backgroundImage: `url('/images/fondoRosySimple.jpg')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -48,7 +48,7 @@ export default function ParentsSection() {
             
             <div
               style={{
-                backgroundColor: "#C8BFE780",
+                //backgroundColor: "#C8BFE780",
               }}
               className="relative p-6 rounded-2xl z-10 text-center space-y-8 py-12"
             >

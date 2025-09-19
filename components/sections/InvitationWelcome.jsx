@@ -1,8 +1,9 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Heart } from "lucide-react"
+//import { Heart } from "lucide-react"
 import Image from "next/image"
+import { TfiCrown } from "react-icons/tfi";
 
 export default function WelcomeMessage({ onContinue }) {
   const [isVisible, setIsVisible] = useState(false)
@@ -20,7 +21,7 @@ export default function WelcomeMessage({ onContinue }) {
   return (
     <div 
     style={{
-      background: 'url(/images/fondoB&B3.jpg)',
+      background: 'url(/images/fondoRosySimple.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat', 
@@ -37,12 +38,12 @@ export default function WelcomeMessage({ onContinue }) {
         <div className=" p-12 text-center text-black">
           {/* Heart icon */}
           <div className="mb-8">
-            <Heart className="w-16 h-16 mx-auto text-white" />
+            <TfiCrown className="w-16 h-16 mx-auto text-amber-500" />
           </div>
 
           {/* Decorative line */}
           <div className="mb-8">
-            <svg className="w-32 h-4 mx-auto text-white" viewBox="0 0 128 16" fill="none">
+            <svg className="w-32 h-4 mx-auto text-amber-500" viewBox="0 0 128 16" fill="none">
               <path
                 d="M2 8C20 2 40 14 64 8C88 2 108 14 126 8"
                 stroke="currentColor"
@@ -60,7 +61,7 @@ export default function WelcomeMessage({ onContinue }) {
             style={{ 
               textShadow: '4px 4px 8px rgba(0, 0, 0, 0.5)',
             }}
-            className="text-xl font-bold leading-relaxed text-red-600 italic">
+            className="font-script text-4xl text-red-500 mb-4 italic">
               ¡Te alabo porque soy una creación admirable! ¡Tus obras son maravillosas, y esto lo sé muy bien!. Salmo 139.14
               Para esta hora he llegado y para este tiempo nací en tus propósitos eternos yo me he visto Padre.
             </p>
@@ -69,7 +70,7 @@ export default function WelcomeMessage({ onContinue }) {
           {/* Continue button */}
           <button
             onClick={handleContinue}
-            className=" bg-emerald-600 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors duration-300 shadow-lg"
+            className=" bg-blue-800 text-amber-500 px-8 py-3 rounded-full text-2xl text-bold hover:bg-blue-400 hover:text-black transition-colors duration-300 shadow-lg"
           >
             Continuar
           </button>

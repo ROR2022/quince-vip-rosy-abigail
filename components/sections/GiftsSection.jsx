@@ -15,8 +15,8 @@ export default function GiftsSection() {
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
   const [isVisible, setIsVisible] = useState(false);
 
-  const basicClass = "font-main-text text-5xl text-white";
-  const completeClass = "font-main-text text-5xl text-white scale-up-center";
+  const basicClass = "font-main-text text-5xl text-amber-500";
+  const completeClass = "font-main-text text-5xl text-amber-500 scale-up-center";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +48,7 @@ export default function GiftsSection() {
     <section
       ref={sectionRef}
       style={{
-        backgroundImage: `url('/images/fondoRosy2.jpg')`,
+        backgroundImage: `url('/images/fondoRosySimple.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -67,9 +67,9 @@ export default function GiftsSection() {
       <div
         style={{
           animation: "bounce1 2s ease 0s 1 normal forwards",
-          backgroundColor: "#C8BFE795",
+          //backgroundColor: "#C8BFE795",
         }}
-        className="container bg-slate-300 bg-opacity-60 mx-auto px-4  p-6 rounded-2xl"
+        className="container mx-auto px-4  p-6 rounded-2xl text-white"
       >
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 
@@ -86,7 +86,7 @@ export default function GiftsSection() {
             <p className="text-muted-foreground">{gifts.message}</p>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-8 mt-8">
-            <div className="bg-white/70 p-6 rounded-2xl w-64">
+            <div className="text-amber-500 p-6 rounded-2xl w-64">
               <h4 className="text-xl font-medium mb-2">Lluvia de Sobres</h4>
               <p className="text-muted-foreground">
                 Tu presencia es el mejor regalo, pero si lo deseas,

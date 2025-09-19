@@ -94,7 +94,7 @@ export default function HeroSection() {
           style={{
             textShadow: '4px 4px 8px rgba(0, 0, 0, 0.5)',
           }}
-          className="text-6xl text-amber-500 font-main-text">
+          className="text-6xl text-amber-500 font-main-text mb-4">
             {couple.initials}
           </div>
           <h2 

@@ -19,8 +19,8 @@ export function PremiumGallery() {
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
     const [isVisible, setIsVisible] = useState(false);
   
-    const basicClass = "text-5xl font-bold mb-4 font-main-text";
-    const completeClass = "text-5xl font-bold mb-4 scale-up-center font-main-text";
+    const basicClass = "text-5xl font-bold mb-4 font-main-text text-amber-500";
+    const completeClass = "text-5xl font-bold mb-4 scale-up-center font-main-text text-amber-500";
   
     useEffect(() => {
       const handleScroll = () => {
@@ -95,7 +95,7 @@ export function PremiumGallery() {
   return (
     <section 
     style={{
-      background: 'url(/images/fondoRosy2.jpg)',
+      background: 'url(/images/fondoRosySimple.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -104,7 +104,7 @@ export function PremiumGallery() {
     className="py-16 px-4">
       <div
         ref={ref}
-        className={`bg-white bg-opacity-70 p-4 rounded-2xl max-w-4xl mx-auto text-center transition-all duration-1000 ${
+        className={`text-white p-4 rounded-2xl max-w-4xl mx-auto text-center transition-all duration-1000 ${
           isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
@@ -116,25 +116,25 @@ export function PremiumGallery() {
 
           <h2 
           className={isVisible ? completeClass : basicClass} 
-          style={{ color: '#fff', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
+          //style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
           >
             {premiumDemoData.gallery.title}
           </h2>
-          <p className="text-xl mb-2 text-indigo-800 italic">
+          <p className="text-xl mb-2 text-white italic">
             {premiumDemoData.gallery.subtitle}
           </p>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             {premiumDemoData.gallery.description}
           </p>
         </div>
 
         <div className="divider">
-          <div className="divider-icon">
+          <div className="divider-icon flex items-center justify-center">
             <Camera className="w-8 h-8" style={{ color: '#e3aaaa' }} />
           </div>
         </div>
         <div>
-          <p className='text-gray-900'>Click en la imagen para ampliarla</p>
+          <p className='text-white'>Click en la imagen para ampliarla</p>
         </div>
         {/* Galería principal */}
         <div className="relative h-64 md:h-80 mt-8 group">
