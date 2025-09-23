@@ -73,7 +73,7 @@ export default function HeroSection() {
        style={{
         //backgroundColor:'#C8BFE780'
        }}
-        className="  p-6 rounded-2xl relative z-10 text-center space-y-6 px-4"
+        className="pt-28  px-6 rounded-2xl relative z-10 text-center space-y-6"
       >
         <h1 
         style={{

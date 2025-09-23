@@ -36,13 +36,17 @@ export default function WelcomeMessage({ onContinue }) {
         }`}
       >
         <div className=" p-12 text-center text-black">
-          {/* Heart icon */}
-          <div className="mb-8">
+          
+          <div 
+          style={{display:'none'}}
+          className="mb-8">
             <TfiCrown className="w-16 h-16 mx-auto text-amber-500" />
           </div>
 
           {/* Decorative line */}
-          <div className="mb-8">
+          <div 
+          style={{display:'none'}}
+          className="mb-8">
             <svg className="w-32 h-4 mx-auto text-amber-500" viewBox="0 0 128 16" fill="none">
               <path
                 d="M2 8C20 2 40 14 64 8C88 2 108 14 126 8"
@@ -61,7 +65,7 @@ export default function WelcomeMessage({ onContinue }) {
             style={{ 
               textShadow: '4px 4px 8px rgba(0, 0, 0, 0.5)',
             }}
-            className="font-script text-4xl text-red-500 mb-4 italic">
+            className="font-script text-4xl text-amber-400 my-4 italic">
               ¡Te alabo porque soy una creación admirable! ¡Tus obras son maravillosas, y esto lo sé muy bien!. Salmo 139.14
               Para esta hora he llegado y para este tiempo nací en tus propósitos eternos yo me he visto Padre.
             </p>

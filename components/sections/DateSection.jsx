@@ -51,31 +51,24 @@ export default function DateSection() {
       ref={sectionRef}
       style={{
          backgroundImage: `url('/images/fondoRosySimple.jpg')`,
-        backgroundSize: 'cover',
+        backgroundSize: '100% 100%',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat', 
         position: 'relative',
+        backgroundColor: '#191970'
         //...animationStyle
       }} 
-    id="date" className="py-20">
+    id="date" className="">
 
-    {/* Overlay configurable */}
-       {/* <div 
-        style={getOverlayStyle(dateSection)}
-        className="absolute inset-0 z-0"
-      ></div>  
-      style={{
-                backgroundColor: "#C8BFE780",
-              }}
-      */}
+ 
 
       <div 
         style={{
           // Remover animación CSS duplicada, usar solo scroll animation
-          willChange: 'transform, opacity', // Optimización para móviles
+          //willChange: 'transform, opacity', // Optimización para móviles
           //backgroundColor: "#C8BFE795",
         }}
-        className="container text-white rounded-b-2xl mx-auto px-4  p-6 rounded-2xl"
+        className="container text-white rounded-b-2xl mx-auto px-4  pt-20 rounded-2xl"
       >
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <p className="text-lg text-muted-foreground italic">
@@ -86,9 +79,9 @@ export default function DateSection() {
           style={{
             textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
           }}
-          className="font-main-text text-4xl text-white font-bold">FECHA ESPECIAL</h2>
+          className="font-main-text text-4xl text-amber-400 font-bold">FECHA ESPECIAL</h2>
 
-          <div className="bg-primary/20 rounded-3xl p-12 max-w-md mx-auto">
+          <div className="bg-primary/20 rounded-3xl max-w-md mx-auto">
             <div className="text-2xl font-medium text-foreground mb-2">
               {wedding.dayName}
             </div>
@@ -108,16 +101,7 @@ export default function DateSection() {
             <div className={isVisible ? completeClass : basicClass}>
               {wedding.day}
             </div>
-            <div
-            style={{display:'none'}}
-            >
-              <Image
-                src="/images/decoration1b.png"
-                alt="Fecha"
-                width={100}
-                height={100}
-              />
-            </div>
+            
             </div>
             <div className="text-2xl font-medium text-foreground mb-2">
               {wedding.month}

@@ -54,12 +54,12 @@ export default function CeremonySection() {
       ref={sectionRef}
       style={{
          backgroundImage: `url('/images/fondoRosySimple.jpg')`,
-        backgroundSize: "cover",
+        backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",  
         position: "relative",
         zIndex: 5000,
-        ...animationStyle,
+        backgroundColor: '#191970'
       }}
       id="ceremony"
       className="py-20"

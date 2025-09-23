@@ -36,10 +36,11 @@ export default function ParentsSection() {
     <section 
     style={{
       backgroundImage: `url('/images/fondoRosySimple.jpg')`,
-      backgroundSize: 'cover',
+      backgroundSize: '100% 100%',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       position: 'relative',
+      backgroundColor: '#191970'
     }}
     id="parents" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">

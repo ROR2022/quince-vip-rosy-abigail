@@ -98,7 +98,7 @@ export default function DressCodeSection() {
       className="py-20"
       style={{
          backgroundImage: `url('/images/fondoRosySimple.jpg')`,
-        backgroundSize: 'cover',
+        backgroundSize: '100% 100%',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',  
         position: "relative",

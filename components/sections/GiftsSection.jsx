@@ -49,7 +49,7 @@ export default function GiftsSection() {
       ref={sectionRef}
       style={{
         backgroundImage: `url('/images/fondoRosySimple.jpg')`,
-        backgroundSize: 'cover',
+        backgroundSize: '100% 100%',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         position: "relative",
