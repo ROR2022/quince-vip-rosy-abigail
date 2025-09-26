@@ -102,7 +102,12 @@ export default function TimelineSection() {
               </div>
             </div>
 
-            <div className="space-y-6 p-6 rounded-2xl text-white">
+            <div
+            
+             className="space-y-6 p-6 rounded-2xl text-white">
+              <div
+              style={{display:'none'}}
+              >
               {timeline.map((item, index) => (
                 <div 
                   key={item.id} 
@@ -141,7 +146,7 @@ export default function TimelineSection() {
                   <div className="hidden md:block w-2 h-2 bg-current opacity-30 rounded-full"></div>
                 </div>
               ))}
-
+              </div>
               <div 
               style={{
                 //backgroundColor: "#C8BFE780",

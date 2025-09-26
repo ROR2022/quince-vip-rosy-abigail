@@ -1,7 +1,7 @@
 // 🎁 GiftsSection - Sección de información de regalos
 
 import React, { useState, useEffect } from "react";
-import { Gift } from "lucide-react";
+import { Mail } from "lucide-react";
 import { weddingData } from "../../data/weddingData";
 //import { getOverlayStyle } from "@/utils/overlay";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -16,7 +16,8 @@ export default function GiftsSection() {
   const [isVisible, setIsVisible] = useState(false);
 
   const basicClass = "font-main-text text-5xl text-amber-500";
-  const completeClass = "font-main-text text-5xl text-amber-500 scale-up-center";
+  const completeClass =
+    "font-main-text text-5xl text-amber-500 scale-up-center";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,9 +50,9 @@ export default function GiftsSection() {
       ref={sectionRef}
       style={{
         backgroundImage: `url('/images/fondoRosySimple.jpg')`,
-        backgroundSize: '100% 100%',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        backgroundSize: "100% 100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
         position: "relative",
         ...animationStyle,
       }}
@@ -72,39 +73,43 @@ export default function GiftsSection() {
         className="container mx-auto px-4  p-6 rounded-2xl text-white"
       >
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 
-          style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
-          className={isVisible ? completeClass : basicClass}>Regalo</h2>
+          <h2
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+            className={isVisible ? completeClass : basicClass}
+          >
+            Regalo
+          </h2>
 
           <div className="bg-muted/50 rounded-2xl p-8 max-w-md mx-auto">
-            <Gift className="w-16 h-16 text-secondary mx-auto mb-4" />
-            <h3 
-            style={{display:'none'}}
-            className="font-script text-3xl text-foreground mb-4">
+            <Mail className="w-16 h-16 text-secondary mx-auto mb-4" />
+            <h3
+              style={{ display: "none" }}
+              className="font-script text-3xl text-foreground mb-4"
+            >
               {gifts.type}
             </h3>
-            <p className="text-muted-foreground">{gifts.message}</p>
+            <p className="text-muted-foreground">
+              Mi mejor regalo es tu asistencia, pero si en tu corazón está
+              bendecirme puedes tomar un sobre y colocar el efectivo.
+            </p>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-8 mt-8">
             <div className="text-amber-500 p-6 rounded-2xl w-64">
               <h4 className="text-xl font-medium mb-2">Lluvia de Sobres</h4>
-              <p className="text-muted-foreground">
+              {/* <p className="text-muted-foreground">
                 Tu presencia es el mejor regalo, pero si lo deseas,
               </p>
               <p className="text-muted-foreground">
                 puedes regalarme efectivo en un sobre.
-              </p>
+              </p> */}
             </div>
-            <div 
-            style={{display:'none'}}
-            className="bg-white/70 p-6 rounded-2xl w-64">
+            <div
+              style={{ display: "none" }}
+              className="bg-white/70 p-6 rounded-2xl w-64"
+            >
               <h4 className="text-xl font-medium mb-2">Mesa de Regalos</h4>
-              <p className="text-muted-foreground">
-                Amazon
-              </p>
-              <p className="text-muted-foreground">
-                ID: 1234567890
-              </p>
+              <p className="text-muted-foreground">Amazon</p>
+              <p className="text-muted-foreground">ID: 1234567890</p>
             </div>
           </div>
         </div>
