@@ -125,7 +125,7 @@ export default function CeremonySection() {
                   <div className="flex items-center justify-center gap-2">
                     <Clock className="w-6 h-6 text-primary" />
                     <span className="text-2xl font-medium">
-                      {ceremony.time}
+                      {ceremony.time} puntual
                     </span>
                   </div>
                   <p className="text-muted-foreground">{ceremony.address}</p>
