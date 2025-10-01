@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { QrCode, Camera, Heart, Sparkles } from 'lucide-react'
+import { QrCode as QrCodeIcon, Camera, Heart, Sparkles } from 'lucide-react'
 import QRDownloadContainer from './QRDownloadContainer'
 
 // Paleta Aurora VIP para Quinceañera - Temática consistente
@@ -53,9 +53,7 @@ const QRCode = () => {
         }}
       /> 
 
-      {/* Contenedor principal */}
-      <div className="text-center z-10 max-w-md mx-auto ">
-        {/* Header con temática quinceañera */}
+{/* Header con temática quinceañera */}
         <div className="mb-8">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Sparkles className="w-6 h-6" style={{ color: VIP_COLORS.oroAurora }} />
@@ -78,10 +76,16 @@ const QRCode = () => {
           >
             ROSY ABIGAIL
           </h1>
+        </div>
 
+      {/* Contenedor principal */}
+      <div className="text-center z-10 flex flex-col md:flex-row gap-8 justify-center items-center mx-auto ">
+        
+
+        <div>
           <div className='mb-6'>
             <Image
-              src="/images/quinceB&B4.jpeg"
+              src="/images/rosy14.jpg"
               alt="Frida"
               width={200}
               height={150}
@@ -124,7 +128,7 @@ const QRCode = () => {
           />
 
           <div className="relative z-10">
-            <QrCode 
+            <QrCodeIcon 
               className="w-8 h-8 mx-auto mb-4" 
               style={{ color: VIP_COLORS.rosaAurora }} 
             />
@@ -162,8 +166,19 @@ const QRCode = () => {
           >
             ✨ Galería Dinámica ✨
           </p>
+
+           {/* Footer elegante */}
+        <p 
+          className="mt-6 text-sm italic"
+          style={{ color: VIP_COLORS.lavandaIntensa, opacity: 0.8 }}
+        >
+          &quot;Comparte momentos únicos en mi día especial&quot;
+        </p>
         </div>
 
+<div
+//style={{ display:'none'}}
+>
         {/* Sección de descarga de QR */}
         <div className="mb-8">
           <QRDownloadContainer 
@@ -179,8 +194,6 @@ const QRCode = () => {
             }}
           />
         </div>
-
-
 
             {/**Sección de Links */}
         <div className='flex flex-col gap-2'>
@@ -260,21 +273,15 @@ const QRCode = () => {
             />
             
             <span className="relative z-10 flex items-center gap-2">
-              <QrCode className="w-5 h-5" />
+              <QrCodeIcon className="w-5 h-5" />
               Ir a Galería
               <Heart className="w-5 h-5" />
             </span>
           </button>
         </Link>
         </div>
-
-        {/* Footer elegante */}
-        <p 
-          className="mt-6 text-sm italic"
-          style={{ color: VIP_COLORS.lavandaIntensa, opacity: 0.8 }}
-        >
-          &quot;Comparte momentos únicos en mi día especial&quot;
-        </p>
+</div>
+       
       </div>
 
       {/* Animación shimmer */}
