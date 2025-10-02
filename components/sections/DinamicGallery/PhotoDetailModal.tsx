@@ -108,7 +108,7 @@ const PhotoDetailModal: React.FC<PhotoDetailModalProps> = ({
       
       // Crear nombre de archivo con timestamp
       const timestamp = new Date().toISOString().replace(/[:.]/g, '-').split('T')[0];
-      const fileName = `frida-quince-${timestamp}-${photo.originalName || 'imagen.jpg'}`;
+      const fileName = `quince-${timestamp}-${photo.originalName || 'imagen.jpg'}`;
       link.download = fileName;
       
       // Ejecutar descarga
