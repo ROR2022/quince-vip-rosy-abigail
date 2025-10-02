@@ -65,7 +65,7 @@ export default function WelcomeMessage({ onContinue }) {
             style={{ 
               textShadow: '4px 4px 8px rgba(0, 0, 0, 0.5)',
             }}
-            className="font-script text-4xl text-amber-400 my-4 italic">
+            className="font-script text-3xl text-amber-400 my-4 italic">
               ¡Te alabo porque soy una creación admirable! ¡Tus obras son maravillosas, y esto lo sé muy bien!. Salmo 139.14
               Para esta hora he llegado y para este tiempo nací en tus propósitos eternos yo me he visto Padre.
             </p>
