@@ -10,8 +10,8 @@ export default function ParentsSection() {
     const [isVisible, setIsVisible] = useState(false);
     
   
-    const basicClass="text-6xl text-amber-500 font-main-text";
-    const completeClass="text-6xl text-amber-500 font-main-text scale-up-center";
+    const basicClass="text-6xl text-amber-500 font-main-text mb-4";
+    const completeClass="text-6xl text-amber-500 font-main-text scale-up-center mb-4";
   
     useEffect(() => {
       const handleScroll = () => {
@@ -54,10 +54,8 @@ export default function ParentsSection() {
               className="relative p-6 rounded-2xl z-10 text-center space-y-8 py-12"
             >
               <p className="text-lg text-white italic max-w-2xl mx-auto leading-relaxed">
-                Hoy, mi corazón rebosa de gratitud. Doy gracias a Dios por cada paso de mi vida y a mis padres  
-                por cuidarme y guiarme en este camino.
-                Hace quince años mis padres agradecieron a Dios por mi vida. 
-                Hoy, yo agradezco a Dios por ellos, por su infinito amor y paciencia.
+                Señor, te doy gracias por cada paso que me ha traído hasta aquí, por la alegría de mis 15 años y la oportunidad de iniciar esta nueva etapa llena de sueños.
+Cuando nací mis padres agradecieron a Dios por mi vida, hoy yo doy gracias a Dios por todo el amor y cuidado que he recibido de parte de ellos.
               </p>
 
               <div className="space-y-8">
